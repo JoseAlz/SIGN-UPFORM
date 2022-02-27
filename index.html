@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.scss" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <link rel="icon" href="./img/viking.png" />
+    <title>OP4</title>
+</head>
+
+<body>
+    <main>
+        <div class="img-block">
+            
+            <div class="img-block__logo">
+                <img class="img-block__odin-icon" src="./img/viking.png" alt="Odin logo">
+                <p class="img-block__odin-text">Odin</p>
+            </div>
+            
+        </div>
+        <div class="form-block">
+            <div class="form-block__para-container">
+                <p>
+                    ¡Esta es una página de registro de demostración! </p><br />Sabes que necesitas
+                algo como esto en tu vida para ayudarte a realizar <em>tus sueños más
+                    profundos</em>.<br /><br /> Inscríbete <i>ahora</i> para empezar.
+                </p>
+            </div>
+            <div class="form-block__form-container">
+                <form action="">
+                    <h3 class="form-header">¡Hagámoslo!</h3>
+                    <p class="asterisk-para">
+                        Se requieren campos marcados con un asterisco (*)
+                    </p>
+                    <div class="input">
+                        <input type="text" id="first-name" placeholder=" " />
+                        <label for="first-name">Primer Nombre</label>
+                        <p class="error-para"></p>
+                    </div>
+                    <div class="input last-name-input">
+                        <input type="text" id="last-name" placeholder=" " />
+                        <label for="last-name">Apellido</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="email" required placeholder=" " />
+                        <label class="email-label" for="email">email</label>
+                        <p class="error-para email-error"></p>
+                    </div>
+                    <div class="input phone-input">
+                        <p>Enter your phone number:</p>
+                        <input id="phone" type="tel" name="phone" placeholder="" required/>               
+                    </div>
+                    <div class="input">
+                        <input type="password" id="password" required placeholder="" />
+                        <label class="password-label" for="password">Password</label>
+                        <p class="error-para password-error">
+                            <span class="pass-at-least-eight check">🗴</span> Minimo 8
+                            caracteres <br />
+                            <span class="pass-at-least-num check">🗴</span> Al menos una letra <br />
+                            <span class="pass-at-least-char check">🗴</span> Al menos un caracter <br />
+                        </p>
+                    </div>
+                    <div class="input">
+                        <input type="password" id="confirm-password" required placeholder=" " />
+                        <label class="password-label" for="confirm-password">Confirm password</label>
+                        <p class="error-para password-confirm-error"></p>
+                    </div>
+                </form>
+                
+            </div>
+            <div class="form-block__btn-container">
+                <button class="create-acc-btn">Crear una cuenta</button>
+                <p>¿Ya tienes una cuenta? <a href="">Iniciar sesión</a></p>
+            </div>
+            <footer>
+                <a href="https://github.com/JoseAlz"><img src="img/github.png" alt="github link" /></a>
+                <a class="gitHub-name" href="https://github.com/JoseAlz">JoseAlz</a>
+            </footer>
+        </div>
+     
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
